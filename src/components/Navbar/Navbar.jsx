@@ -15,11 +15,12 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
 
 const pages = [
-  {name: 'Home', url: "/"},
-  {name: 'Products', url: "/products"},
-  {name: 'Dashboard', url: "/dashboard"},
+  { name: 'Home', url: "/" },
+  { name: 'Products', url: "/products" },
+  { name: 'Dashboard', url: "/dashboard" },
 ];
-const settings = ['Profile', 'Logout'];
+
+const settings = ['Profile', 'Logout', 'Login as Seller', 'Login as User'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -34,7 +35,7 @@ function Navbar() {
   };
 
   const handleCloseNavMenu = (url = null) => {
-    if(url != null) {
+    if (url != null) {
       navigate(url)
     }
 
