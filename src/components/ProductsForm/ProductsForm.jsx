@@ -9,6 +9,7 @@ import {
     serverTimestamp
 } from "firebase/firestore";
 import { DB } from "../../firebase.config";
+import EnhancedTable from '../ProductsTable/ProductsTable';
 
 
 
@@ -364,6 +365,8 @@ const ProductsForm = () => {
                 </tbody>
 
             </table>
+
+            <EnhancedTable />
         </div>
     )
 }

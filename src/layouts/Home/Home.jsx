@@ -7,9 +7,6 @@ import {
 } from "firebase/firestore";
 import { DB } from "../../firebase.config";
 
-
-
-
 const Home = () => {
 
   const [products, setProducts] = useState([]);
