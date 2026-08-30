@@ -9,8 +9,7 @@ import {
     serverTimestamp
 } from "firebase/firestore";
 import { DB } from "../../firebase.config";
-import EnhancedTable from '../ProductsTable/ProductsTable';
-
+import EnhancedTable from '../EnhancedTable/EnhancedTable';
 
 
 
@@ -208,7 +207,7 @@ const ProductsForm = () => {
     return (
         <div className='container'>
             <h2>Product Upload Form</h2>
-            <form onSubmit={handleFormSubmit} className='row'>
+            <form onSubmit={handleFormSubmit} className='row mb-3'>
                 <div className="mb-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <label htmlFor="productName" className="form-label">Product Name</label>
                     <input onChange={handleFormInputs} type="text" placeholder='Enter product name' className="form-control" value={itemsData.productName} name="productName" />
@@ -262,7 +261,7 @@ const ProductsForm = () => {
 
 
 
-            <table
+            {/* <table
                 border="1"
                 cellPadding="10"
                 style={{
@@ -293,8 +292,6 @@ const ProductsForm = () => {
                     </tr>
 
                 </thead>
-
-
                 <tbody>
 
                     {products.length === 0 ? (
@@ -364,7 +361,7 @@ const ProductsForm = () => {
 
                 </tbody>
 
-            </table>
+            </table> */}
 
             <EnhancedTable />
         </div>
